@@ -1,0 +1,173 @@
+:root {
+
+  --color-bg-footer: #001e52;
+
+  --color-text: #0e0600;
+
+  --size-text: 40px;
+
+  --color1: rgba(2, 0, 36, 1) 0%;
+
+  --color2: rgba(9, 9, 121, 1) 35%;
+
+  --color3: rgba(0, 212, 255, 1) 100%;
+}
+
+/* Main Container */
+.wrapper {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main-container {
+  background-image: url('../assets/bg-login.jpg');
+  background-size: cover;
+  display: flex;
+  height: calc(100vh - 70px);
+}
+
+/* Left Container */
+.left-container {
+  display: flex;
+  flex: 0.7;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 150px;
+  left: 100px;
+  position: relative;
+  top: 180px;
+  width: 300px;
+}
+
+.silvio {
+  align-self: flex-end;
+  height: 300px;
+  position: relative;
+  right: 70px;
+  width: 400px;
+}
+
+/* Right Container */
+.login-container {
+  align-items: center;
+  display: flex;
+  flex: 0.3;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-container input {
+  height: 40px;
+  margin-bottom: 20px;
+  width: 70%;
+}
+
+.login-container button {
+  border-radius: 8px;
+  color: white;
+  font-size: 20px;
+  height: 40px;
+  width: 100px;
+}
+
+.disabled {
+  background: rgb(194, 185, 185);
+}
+
+.disabled ::content {
+  color: white;
+}
+
+.enabled {
+  background: rgb(18, 64, 214);
+  cursor: pointer;
+}
+
+.enabled:hover {
+  background: rgb(2, 17, 70);
+}
+
+/* Footer Container */
+.footer-container {
+  align-items: center;
+  background: radial-gradient(circle, var(--color1), var(--color2), var(--color3));
+  display: flex;
+  height: 70px;
+  justify-content: center;
+}
+
+.footer-container img {
+  height: 90%;
+  width: 30px;
+}
+
+.ranking, .settings, .about {
+  align-items: center;
+  background: rgb(228, 219, 219);
+  border: 2px white solid;
+  border-radius: 8px;
+  display: flex;
+  height: 60%;
+  justify-content: center;
+  margin-left: 50px;
+  width: 50px;
+}
+
+.ranking:hover, .settings:hover, .about:hover {
+  background: rgb(2, 17, 70);
+  border: 2px white solid;
+  cursor: pointer;
+}
+
+/* Social Buttons */
+.social-login {
+  display: flex;
+  margin: 30px;
+}
+
+.social-login div {
+  border-radius: 20px;
+  box-shadow: 2px 5px 10px black;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  margin-right: 10px;
+  width: 115px;
+}
+
+.social-login div, .login-button, .login-register-buttons:hover {
+  cursor: pointer;
+}
+
+.social-login div img {
+  align-self: center;
+  height: 20px;
+  margin: 5px;
+}
+
+.social-login div span {
+  align-self: center;
+  font-size: 15px;
+}
+
+.google {
+  background-color: white;
+}
+
+.facebook {
+  background-color: #1d4594;
+}
+
+.apple {
+  background-color: black;
+  color: white;
+}
+
+/*
+Gradiente retirado do site:
+https://cssgradient.io/
+*/
+

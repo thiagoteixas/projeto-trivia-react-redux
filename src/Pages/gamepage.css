@@ -1,0 +1,264 @@
+:root {
+
+  --rgb1: rgba(2, 0, 36, 1) 0%;
+
+  --rgb2: rgba(9, 9, 121, 1) 35%;
+
+  --rgb3: rgba(0, 212, 255, 1) 100%;
+}
+
+.wrapper {
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Estilo do component Header */
+.header-container {
+  background: black;
+  display: flex;
+  height: 70px;
+  justify-content: space-around;
+  opacity: 0.9;
+}
+
+.header-avatar {
+  align-self: center;
+  background: white;
+  border-radius: 100%;
+  height: 60px;
+  left: 50px;
+  position: relative;
+  width: 60px;
+}
+
+.player-info-container {
+  display: flex;
+  flex-direction: column;
+  left: 230px;
+  position: relative;
+  width: 350px;
+}
+
+.header-player-name {
+  align-self: center;
+  color: white;
+}
+
+.header-player-email {
+  align-self: center;
+  bottom: 28px;
+  color: white;
+  position: relative;
+
+}
+
+.header-player-score {
+  align-self: center;
+  color: white;
+  position: relative;
+  right: 150px;
+}
+
+.header-timer {
+  align-self: center;
+  color: white;
+  position: relative;
+  right: 20px;
+}
+
+.main-gamepage-container {
+  background: linear-gradient(90deg, var(--rgb1), var(--rgb2), var(--rgb3));
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 70px);
+}
+
+/* Estilo container de Perguntas */
+.question-container {
+  align-items: center;
+  align-self: center;
+  background: black;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  opacity: 0.9;
+  width: 90%;
+}
+
+.question {
+  color: white;
+  font-size: 18px;
+}
+
+.category {
+  color: white;
+  font-weight: 600;
+  text-decoration-line: underline;
+}
+
+.row-contents {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Estilo do container de Respostas */
+.answers-container {
+  align-items: center;
+  display: flex;
+  height: 370px;
+  margin-top: 30px;
+  width: 40%;
+}
+
+.answer-items {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content: center;
+  opacity: 0.9;
+  width: 100%;
+}
+
+.answer {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  height: 45px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  width: 75%;
+}
+
+.square {
+  align-items: center;
+  background: white;
+  border-radius: 100%;
+  display: flex;
+  font-size: 25px;
+  font-weight: 900;
+  height: 45px;
+  justify-content: center;
+  position: fixed;
+  width: 45px;
+  z-index: 1;
+}
+
+.answer-field {
+  background: red;
+  border-radius: 10px;
+  height: 100%;
+  justify-content: center;
+  left: 8px;
+  width: 100%;
+}
+
+.answer-field p {
+  color: white;
+  font-weight: 600;
+}
+
+/* Estilo do componente Helps */
+.helps {
+  align-items: center;
+  display: flex;
+  height: 370px;
+  margin-top: 30px;
+  width: 40%;
+}
+
+.help-items {
+  background: black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content: space-around;
+  opacity: 0.8;
+  width: 100%;
+}
+
+.help-items img {
+  height: 40px;
+  width: 50px;
+}
+
+.line1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.line2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.universitarios, .placas, .cartas, .pulo {
+  align-items: center;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 80px;
+}
+
+.universitarios p, .placas p, .cartas p, .pulo p {
+  color: white;
+}
+
+/* Estilo do botao de Next */
+.button-container {
+  height: 55px;
+}
+
+.next-button {
+  background: rgb(18, 64, 214);
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  height: 50px;
+  left: 240px;
+  position: relative;
+  width: 120px;
+}
+
+.next-button:hover {
+  background: rgb(2, 17, 70);
+  border: 1px white solid;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 800;
+  height: 50px;
+  width: 120px;
+}
+
+/* Classes do Requisito 7 */
+.correct-color {
+  background: green;
+  border: 3px solid rgb(6, 240, 15);
+  border-radius: 10px;
+  height: 45px;
+  left: 8px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  position: relative;
+  width: 72%;
+}
+
+.incorrect-color {
+  background: rgb(233, 58, 96);
+  border: 3px solid red;
+  border-radius: 10px;
+  height: 45px;
+  left: 8px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  position: relative;
+  width: 72%;
+}
+

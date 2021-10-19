@@ -1,0 +1,16 @@
+:root {
+
+  --rgb1: rgba(2, 0, 36, 1) 0%;
+
+  --rgb2: rgba(9, 9, 121, 1) 35%;
+
+  --rgb3: rgba(0, 212, 255, 1) 100%;
+}
+
+.loading-page {
+  align-items: center;
+  background: linear-gradient(90deg, var(--rgb1), var(--rgb2), var(--rgb3));
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
