@@ -39,3 +39,8 @@ Desenvolvemos um jogo de perguntas e respostas baseado no jogo **Trivia** _(tipo
   * Inicialize o projeto:
     * `npm start` (uma nova página deve abrir no seu navegador com um texto simples)
 
+
+## GitHub dos demais membros do grupo:
+  * https://github.com/MarcusVMendes
+  * https://github.com/altgauzen
+  * https://github.com/AC-Oliveira
